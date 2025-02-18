@@ -579,7 +579,7 @@ footer.main-footer nav.footer-nav ul li a{
 	margin: 0 auto 30px;
 }
 @media (max-width: 991px) {
-	.site-hero ul.slides{height: 750px;}
+	.site-hero ul.slides{height: 500px;}
 	.agency{margin-top: 30px;}
 	.agency img{margin-bottom: 30px;}
 	.agency .section-title{margin: 0 auto;text-align: center;}
