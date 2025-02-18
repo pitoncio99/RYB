@@ -1,0 +1,80 @@
+
+body{
+    background: radial-gradient(closest-side, #f39f8667, #86750396);
+    opacity: 100%;
+}
+.navbar{
+    background:rgba(53, 51, 51, 0.621) ;
+    padding-bottom: 110px;
+    
+}
+a:hover, a:focus{
+    color:#ffffff;
+	text-decoration: none;
+}
+
+.animsition-link{
+    color: #CFB403;
+}
+.titulo_grafico{
+    width: 100%;
+    text-align: center;
+    color: black;
+    
+}
+.logo{
+    width: 100px;
+    margin-bottom: 10px;
+    
+}
+.container_graficos{
+
+display: flex;
+flex-direction: row;
+height: auto;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+.grafica1{
+    width: 45%;
+
+}
+.grafica2{
+    width: 45%;
+}
+.grafica3 {  
+
+width: 45%;
+}
+canvas{
+    background-color: rgba(0, 0, 0, 0.155);
+    border-radius: 10px;
+}
+.rodapie {
+    background:rgba(53, 51, 51, 0.621) ;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.logos_footer{
+    display: flex;
+    flex-direction: column;
+   
+    padding-top: 25px;
+    background-color: rgba(0, 0, 0, 0.155);
+    width: 100%;
+}
+.logo_roda{
+    display: flex;
+    justify-content: center;
+}
+.texto_rodapie{
+    display: flex;
+    justify-content: center;
+    color: black;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
