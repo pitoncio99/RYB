@@ -1260,11 +1260,12 @@ footer.main-footer nav.footer-nav ul li a{
 /* Estilos para la galería de servicios */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se adapta al tamaño de pantalla */
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se adapta automáticamente */
+    gap: 20px; /* Espaciado más compacto */
     margin: 40px auto;
-    max-width: 90%; /* Hace que el contenedor sea más ancho que las tarjetas */
+    max-width: 1200px; /* Limita el ancho máximo para evitar que se vea demasiado extendido */
     padding: 20px;
+    justify-content: center; /* Centra los elementos si hay espacio de sobra */
     text-align: center;
 }
 
