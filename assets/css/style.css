@@ -1264,7 +1264,7 @@ footer.main-footer nav.footer-nav ul li a{
     gap: 20px; /* Espaciado más compacto */
     margin: 40px auto;
     max-width: 1200px; /* Limita el ancho máximo para evitar que se vea demasiado extendido */
-    padding: 20px;
+    
     justify-content: center; /* Centra los elementos si hay espacio de sobra */
     text-align: center;
 }
