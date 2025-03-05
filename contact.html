@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>R&B Consultores | Inicio</title>
 	<!-- META TAGS -->
@@ -16,169 +17,115 @@
 	<link rel="stylesheet" href="assets/css/animsition.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+		/* Centrado de formulario */
+		.contact_page {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh; /* Ocupa toda la altura de la ventana */
+		}
+
+		.contact_page .container {
+			width: 100%;
+			max-width: 600px; /* Limitar el tamaño del formulario */
+		}
+
+		/* Asegura que el formulario tenga un estilo adecuado */
+		.contact_page form {
+			width: 100%;
+			background: #f9f9f9;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Asegura que los inputs se ajusten */
+		.contact_page .input_1 input,
+		.contact_page .textarea_1 textarea {
+			width: 100%;
+		}
+	</style>
 </head>
+
 <body class="animsition">
-	<!-- HEADER  -->
+	<!-- HEADER -->
 	<header class="main-header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"><img src="assets/img/icons/RyB.png" alt="logo" sstyle="border-radius: 15px;"
-					height="100px"></a>
+				<a href="index.html"><img src="assets/img/icons/RyB.png" alt="logo" style="border-radius: 15px;" height="100px"></a>
 			</div>
 
 			<div class="menu">
-				<!-- desktop navbar -->
 				<nav class="desktop-nav">
 					<ul class="first-level">
-						<li><a href="index.html" class="animsition-link">Inicio</a>
-
-						</li>
-						
-						<!--<li><a href="about.html" class="animsition-link">Sobre Nosotros</a></li>
-						
-						
-						<li><a href="contact.html" class="animsition-link">Contáctanos</a></li>
+						<li><a href="index.html" class="animsition-link">Inicio</a></li>
 					</ul>
 				</nav>
-				<!-- mobile navbar -->
-				<nav class="mobile-nav"></nav>
-				<div class="menu-icon">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</div>
 			</div>
 		</div>
 	</header>
 
-
-	
-	<!-- HERO SECTION  -->
+	<!-- HERO SECTION -->
 	<div class="site-hero_2">
 		<div class="page-title">
 			<div class="big-title montserrat-text uppercase">Contáctanos</div>
 			<div class="small-title montserrat-text uppercase">Mediante nuestro formulario de contacto</div>
 		</div>
 	</div>
-
-
+    <section class="intro-text">
+        <h2>Estamos aquí para ayudarte</h2>
+        <p>Si tienes alguna pregunta o deseas más información sobre nuestros servicios, no dudes en completar el formulario a continuación. ¡Nos encantaría saber de ti!</p>
+    </section>
 	<section class="contact_page">
 		<div class="container">
-			<div class="row">
+			<form action="send_email.php" method="post" id="contact-form">
 				<div class="col-md-6">
-					<div class="row">
-						<form action="send_email.php" method="post">
-							<div class="col-md-6">
-								<div class="input_1" style="margin-bottom:30px">
-									<input type="text" name="name" required>
-									<span>Tu nombre</span>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="input_1" style="margin-bottom:30px">
-									<input type="email" name="email" required>
-									<span>Tu e-mail</span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="input_1" style="margin-bottom:30px">
-									<input type="text" name="subject" required>
-									<span>Asunto de contacto</span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="textarea_1" style="margin-bottom:30px">
-									<textarea name="message" required></textarea>
-									<span>Mensaje</span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<button type="submit" class="btn green"><span>Enviar mensaje</span></button>
-							</div>
-						</form>
-						
+					<div class="input_1" style="margin-bottom:30px">
+						<input type="text" name="name" required>
+						<span>Tu nombre</span>
 					</div>
-
-					<h4 class="montserrat-text uppercase" style="margin-top:100px">Información de contacto</h4>
-					<p>Si deseas conocer más sobre R&B Consultores, podrás encontrarnos personalmente en:</p>
-					
-					<p>
-						<a href="tel:+56961883636">+56 9 6188 3636</a> <br/>
-						<a href="mailto:contacto@rybconsultora.com">contacto@rybconsultora.com</a> <br/>
-						<!-- <a href="https://wa.me/56961883636" target="_blank">Chatea con nosotros en WhatsApp</a><br/> -->
-						
-					</p>
-
-					
-				</div><!-- end col -->
-
-				<div class="col-md-6">
-					<div id="map" style="width:100%"></div>
 				</div>
-
-			</div>
+				<div class="col-md-6">
+					<div class="input_1" style="margin-bottom:30px">
+						<input type="email" name="email" required>
+						<span>Tu e-mail</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="input_1" style="margin-bottom:30px">
+						<input type="text" name="subject" required>
+						<span>Asunto de contacto</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="textarea_1" style="margin-bottom:30px">
+						<textarea name="message" required></textarea>
+						<span>Mensaje</span>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<button type="submit" class="btn green"><span>Enviar mensaje</span></button>
+				</div>
+			</form>
 		</div>
 	</section>
-
-
-		<!-- newsletter -->
-		<section class="green-section wow fadeInUp" style="padding:50px 0">
-			<div class="container">
-				<div class="col-md-6 col-sm-12">
-					<div class="row">
-						<span class="white-text montserrat-text uppercase" style="font-size:30px;display:block;">
-							¿Te interesa lo que hacemos?, Trabaja con nosotros!
-						</span>
-						<a href="contact.html" class="btn white" style="margin-top:30px"><span> Contactanos! </span></a>
-					</div>
-				</div>
-	
-				<div class="col-md-6 col-sm-12">
-					<div class="row">
-						<div class="white-section" style="padding:20px">
-							<span class="montserrat-text uppercase" style="font-size:24px">Mantente informado de nuestras novedades</span>
-							<p>
-								Sé el primero en informarte sobre nuestras novedades.
-							</p>
-							<form action="#" method="post">
-								<div class="input_1">
-									<input type="text" name="email">
-									<span>Correo Electrónico</span>
-								</div>
-								<button type="submit" class="btn green" style="margin-top:20px"><span>Enviar</span></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
+	<section class="intro-text">
+        
+        <p>También puedes contactarnos por teléfono al número <a href="tel:+56961883636">+56 9 6188 3636</a> <br/> </p>
+          <p>O por correo a  <a href="mailto:contacto@rybconsultora.com">contacto@rybconsultora.com</a>  <br/> </p>
+    </section>
 
 	<!-- FOOTER -->
 	<footer class="main-footer wow fadeInUp">
 		<div class="container">
 			<div class="col-md-8 col-sm-12">
-				<div class="row">
-					<nav class="footer-nav">
-						<ul>
-							<li><a href="index.html" class="animsition-link link">Inicio</a></li>
-							<li><a href="contact.html" class="animsition-link link">Contáctanos</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="index.html" class="animsition-link link">Inicio</a></li>
 
-			<div class="col-md-4 col-sm-12" style="text-align:right">
-				<div class="row">
-					<div class="uppercase gray-text">
-						R&B CONSULTORES LTDA </br>
-						<a href="tel:+56961883636">+56 9 6188 3636</a> <br/>
-						<a href="mailto:contacto@rybconsultora.com">contacto@rybconsultora.com</a> <br/>
-						<!-- <a href="https://wa.me/56961883636" target="_blank">Chatea con nosotros en WhatsApp</a> -->
-
-					</div>
-					
-				</div>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</footer>
@@ -187,35 +134,21 @@
 	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="assets/js/smoothScroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.animsition.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="assets/js/wow.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 
 	<script type="text/javascript">
-		// initialize google maps
-		google.maps.event.addDomListener(window, 'load', initialize);
-		function initialize() {
-			var mapOptions = {
-				zoom: 15,
-				center: new google.maps.LatLng(-28.57617, -70.75938), // VALLERNARE
-				scrollwheel: true,
-				styles:[{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-			};
-
-			var mapElement = document.getElementById('map');
-			var map = new google.maps.Map(mapElement, mapOptions);
-
-			var marker = new google.maps.Marker({
-			    position: new google.maps.LatLng(-28.57617, -70.75938),
-			    map: map,
-				icon: 'assets/img/map.png',
-			    title: 'Find us here!'
-			});
-		}
-		$(window).load(function(){
-			new WOW().init();
-			$("#map").css("height",$("#map").parent().parent().height() + "px");
+		// Código para mostrar una notificación con alert()
+		$(document).ready(function () {
+			// Verificar si la URL tiene el parámetro "success=true"
+			if (window.location.search.indexOf('success=true') !== -1) {
+				alert("¡Mensaje enviado correctamente!");
+				setTimeout(function () {
+					window.location.href = 'index.html'; // Redirige al inicio después de 2 segundos
+				}, 500);
+			}
 		});
 	</script>
 </body>
+
 </html>

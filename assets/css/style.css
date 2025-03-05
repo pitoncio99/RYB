@@ -1326,5 +1326,19 @@ footer.main-footer nav.footer-nav ul li a{
     font-weight: bold;
     color: #050a30;
 }
+.intro-text {
+	text-align: center;
+	color: #333; /* Gris oscuro */
+	margin-bottom: 40px;
+}
 
+.intro-text p {
+	font-size: 18px;
+	color: black;
+}
+
+.intro-text h2 {
+	font-size: 28px;
+	color: #555; 
+}
 
