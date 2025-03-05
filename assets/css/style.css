@@ -853,6 +853,22 @@ footer.main-footer nav.footer-nav ul li a{
 	font-size: 14px;
 	color:#9a9a9a;
 }
+
+
+.input_1 input[type="email"]{
+	height: 100%;
+	width: 100%;
+	border:0;
+	padding: 0 20px;
+	float: left;
+	position: relative;
+	background-color: transparent;
+	z-index: 2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	color:#9a9a9a;
+}
+
 .input_1 > span{
 	position: absolute;
 	top:50%;
@@ -1310,3 +1326,5 @@ footer.main-footer nav.footer-nav ul li a{
     font-weight: bold;
     color: #050a30;
 }
+
+
