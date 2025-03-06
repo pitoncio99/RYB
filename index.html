@@ -454,13 +454,14 @@
 						<p>
 							Sé el primero en informarte sobre nuestras novedades.
 						</p>
-						<form action="#">
-							<div class="input_1">
-								<input type="text" name="email">
-								<span>Correo Electrónico</span>
-							</div>
-							<button type="submit" class="btn green" style="margin-top:20px"><span>Enviar</span></button>
-						</form>
+						<form action="procesar_formulario.php" method="POST">
+                            <div class="input_1">
+                                <input type="email" name="email" required>
+                                <span>Correo Electrónico</span>
+                            </div>
+                            <button type="submit" class="btn green" style="margin-top:20px"><span>Enviar</span></button>
+                        </form>
+
 					</div>
 				</div>
 			</div>
